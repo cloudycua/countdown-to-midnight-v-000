@@ -10,10 +10,9 @@ def countdown(integer)
 end
 
 def countdown_with_sleep(seconds)
-  one_second = sleep 1
   while seconds > 0
-    puts "#{seconds}"
-    seconds -= one_second
+    sleep 1
+    seconds -= 1
   end
   return "Goodnight"
 end
